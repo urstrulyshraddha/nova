@@ -1,27 +1,28 @@
 import os
 import json
 import feedparser
+import requests
 from datetime import datetime, timezone
-from typing import List, Optional
+from typing import List
 from pydantic import BaseModel, Field
 from google import genai
 from google.genai import types
 
 SOURCES = {
     "cybersecurity": [
-        ("CISA Advisories", "[https://www.cisa.gov/cybersecurity-advisories/all.xml](https://www.cisa.gov/cybersecurity-advisories/all.xml)"),
-        ("The Hacker News", "[https://feeds.feedburner.com/TheHackersNews](https://feeds.feedburner.com/TheHackersNews)")
+        ("CISA Advisories", "https://www.cisa.gov/news-events/cybersecurity-advisories.xml"),
+        ("The Hacker News", "https://feeds.feedburner.com/TheHackersNews")
     ],
     "tech": [
-        ("Ars Technica", "[https://feeds.arstechnica.com/arstechnica/index](https://feeds.arstechnica.com/arstechnica/index)"),
-        ("Hacker News (Top)", "[https://hnrss.org/frontpage?points=100](https://hnrss.org/frontpage?points=100)")
+        ("Ars Technica", "https://feeds.arstechnica.com/arstechnica/index"),
+        ("Hacker News (Top)", "https://hnrss.org/frontpage?points=100")
     ],
     "science": [
-        ("Nature News", "[https://www.nature.com/nature.rss](https://www.nature.com/nature.rss)")
+        ("Nature News", "https://www.nature.com/nature.rss")
     ]
 }
 
-# --- Schemas ---
+# --- Pydantic Schemas ---
 class StorySummary(BaseModel):
     title: str = Field(description="Direct, factual headline")
     category: str = Field(description="One of: cybersecurity, tech, science, world")
@@ -34,7 +35,7 @@ class StorySummary(BaseModel):
 class DailyBriefing(BaseModel):
     stories: List[StorySummary]
 
-# --- Quote Selection Logic ---
+# --- Quote Selection ---
 def get_daily_quote(quotes_file="data/quotes.json") -> dict:
     fallback = {
         "quote": "The superior person acts before speaking, and afterwards speaks according to their actions.",
@@ -53,7 +54,6 @@ def get_daily_quote(quotes_file="data/quotes.json") -> dict:
         if not isinstance(quotes, list) or len(quotes) == 0:
             return fallback
 
-        # Pick deterministically by day of the year
         day_of_year = datetime.now(timezone.utc).timetuple().tm_yday
         selected = quotes[day_of_year % len(quotes)]
         return {
@@ -65,10 +65,9 @@ def get_daily_quote(quotes_file="data/quotes.json") -> dict:
         print(f"[!] Error parsing quotes: {e}")
         return fallback
 
-# --- RSS Collector ---
+# --- RSS Extractor ---
 def collect_feed_items(max_per_feed=5):
     raw_candidates = []
-
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
         "Accept": "application/rss+xml, application/xml, text/xml, */*",
@@ -78,7 +77,6 @@ def collect_feed_items(max_per_feed=5):
     for cat, feed_list in SOURCES.items():
         for name, url in feed_list:
             try:
-                # Fetch raw text first to guarantee valid HTTP status
                 resp = requests.get(url, headers=headers, timeout=12)
                 if resp.status_code != 200:
                     print(f"[!] {name} returned HTTP {resp.status_code}")
@@ -117,14 +115,14 @@ def run_pipeline():
         print("[!] No candidates collected. Aborting.")
         return
 
-    print(f"[*] Processing {len(candidates)} candidates through Gemini...")
+    print(f"[*] Distilling {len(candidates)} candidates via Gemini...")
     client = genai.Client(api_key=api_key)
 
     prompt = f"""
     You are an automated intelligence curator.
     Select the 10-15 most critical, high-impact stories from the candidates below.
-    Prioritize zero-days, infrastructure security, core systems architecture, and scientific papers.
-    Reject marketing promotions, product redesigns, and duplicates.
+    Prioritize zero-days, infrastructure security, core systems architecture, and foundational scientific developments.
+    Filter out marketing fluff, repetitive commentary, and speculative gossip.
 
     Raw Candidates:
     {json.dumps(candidates, indent=2)}
@@ -153,7 +151,7 @@ def run_pipeline():
     with open("data/briefing.json", "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
-    print(f"[✓] Generated data/briefing.json successfully with {len(output['stories'])} stories.")
+    print(f"[✓] Published edition with {len(output['stories'])} stories to data/briefing.json")
 
 if __name__ == "__main__":
     run_pipeline()
