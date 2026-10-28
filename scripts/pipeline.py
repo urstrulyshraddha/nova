@@ -68,13 +68,27 @@ def get_daily_quote(quotes_file="data/quotes.json") -> dict:
 # --- RSS Collector ---
 def collect_feed_items(max_per_feed=5):
     raw_candidates = []
-    agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) NovaBot/1.0"
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Accept": "application/rss+xml, application/xml, text/xml, */*",
+        "Accept-Language": "en-US,en;q=0.9"
+    }
 
     for cat, feed_list in SOURCES.items():
         for name, url in feed_list:
             try:
-                parsed = feedparser.parse(url, agent=agent)
-                for entry in parsed.entries[:max_per_feed]:
+                # Fetch raw text first to guarantee valid HTTP status
+                resp = requests.get(url, headers=headers, timeout=12)
+                if resp.status_code != 200:
+                    print(f"[!] {name} returned HTTP {resp.status_code}")
+                    continue
+
+                parsed = feedparser.parse(resp.content)
+                entries = parsed.entries[:max_per_feed]
+                print(f"[+] {name}: Found {len(entries)} items")
+
+                for entry in entries:
                     raw_candidates.append({
                         "category": cat,
                         "source_name": name,
@@ -85,6 +99,7 @@ def collect_feed_items(max_per_feed=5):
                     })
             except Exception as e:
                 print(f"[!] Error fetching {name}: {e}")
+
     return raw_candidates
 
 # --- Pipeline Execution ---
