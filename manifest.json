@@ -1,0 +1,16 @@
+{
+  "name": "Nova Intelligence",
+  "short_name": "Nova",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#141715",
+  "theme_color": "#141715",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
