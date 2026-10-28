@@ -1,0 +1,31 @@
+{
+  "edition_date": "2026-10-28",
+  "generated_at": "2026-10-28T01:30:00Z",
+    "daily_quote": {
+      "quote": "The superior person acts before speaking, and afterwards speaks according to their actions.",
+      "author": "Confucius",
+      "source": "The Analects 4.24"
+    },
+  "stories": [
+    {
+      "title": "CISA Adds Critical Microarchitectural Execution Flaw to Known Exploited Vulnerabilities Catalog",
+      "category": "cybersecurity",
+      "published_at": "2026-10-27T18:00:00Z",
+      "source_name": "CISA Advisories",
+      "source_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "summary": "Federal agencies must patch an exploited speculative execution leak affecting enterprise hardware within three weeks.",
+      "why_it_matters": "Active exploitation signals widespread scanning and threat actor weaponization across shared cloud infrastructure.",
+      "verification_status": "official_advisory"
+    },
+    {
+      "title": "LLVM 21 Introduces Automated Constant-Time Cryptographic Verification Passes",
+      "category": "tech",
+      "published_at": "2026-10-27T14:30:00Z",
+      "source_name": "Phoronix",
+      "source_url": "https://phoronix.com",
+      "summary": "The upstream compiler infrastructure merges backend flags designed to prevent variable-time instruction latency leaks in crypto implementations.",
+      "why_it_matters": "Mitigates side-channel timing attacks at compile time without manual inline assembly workarounds.",
+      "verification_status": "single_source"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova — Daily Signals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <header class="masthead">
+      <div class="brand">
+        <div class="brand-left">
+          <span class="status-dot"></span>
+          <h1 class="logo">NOVA</h1>
+        </div>
+        <span class="edition-badge" id="editionDate">...</span>
+      </div>
+
+      <!-- Typewriter Hero Section -->
+      <div class="greeting-container">
+        <h2 class="typewriter-headline">
+          <span class="greeting-prefix">Hello </span><span class="typewriter-target" id="typewriterText"></span><span class="cursor">_</span>
+        </h2>
+      </div>
+
+      <!-- Quote of the Day Card -->
+      <figure class="quote-card" id="quoteBox">
+        <blockquote class="quote-text" id="quoteText">"..."</blockquote>
+        <figcaption class="quote-meta" id="quoteMeta">—</figcaption>
+      </figure>
+
+      <nav class="category-nav" id="categoryNav">
+        <button class="nav-pill active" data-cat="all">All</button>
+        <button class="nav-pill" data-cat="cybersecurity">Cybersecurity</button>
+        <button class="nav-pill" data-cat="tech">Tech</button>
+        <button class="nav-pill" data-cat="science">Research</button>
+      </nav>
+    </header>
+
+    <div class="carousel-wrapper">
+      <main class="feed-carousel" id="feedCarousel">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </main>
+      <div class="swipe-hint">← Swipe to read stories →</div>
+    </div>
+
+    <footer class="footer">
+      <span id="lastUpdated">Updated: --</span>
+      <span>Static Pipeline</span>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
