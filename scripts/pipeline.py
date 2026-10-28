@@ -11,10 +11,12 @@ from google.genai import types
 SOURCES = {
     "cybersecurity": [
         ("The Hacker News", "https://feeds.feedburner.com/TheHackersNews"),
-        ("BleepingComputer", "https://www.bleepingcomputer.com/feed/")
+        ("BleepingComputer", "https://www.bleepingcomputer.com/feed/"),
+        ("The Record", "https://therecord.media/feed")
     ],
     "tech": [
         ("Ars Technica", "https://feeds.arstechnica.com/arstechnica/index"),
+        ("TechCrunch", "https://techcrunch.com/feed/"),
         ("The Verge", "https://www.theverge.com/rss/index.xml")
     ],
     "science": [
