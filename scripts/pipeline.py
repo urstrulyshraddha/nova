@@ -10,12 +10,12 @@ from google.genai import types
 
 SOURCES = {
     "cybersecurity": [
-        ("CISA Advisories", "https://www.cisa.gov/news-events/cybersecurity-advisories.xml"),
-        ("The Hacker News", "https://feeds.feedburner.com/TheHackersNews")
+        ("The Hacker News", "https://feeds.feedburner.com/TheHackersNews"),
+        ("BleepingComputer", "https://www.bleepingcomputer.com/feed/")
     ],
     "tech": [
         ("Ars Technica", "https://feeds.arstechnica.com/arstechnica/index"),
-        ("Hacker News (Top)", "https://hnrss.org/frontpage?points=100")
+        ("The Verge", "https://www.theverge.com/rss/index.xml")
     ],
     "science": [
         ("Nature News", "https://www.nature.com/nature.rss")
@@ -65,19 +65,18 @@ def get_daily_quote(quotes_file="data/quotes.json") -> dict:
         print(f"[!] Error parsing quotes: {e}")
         return fallback
 
-# --- RSS Extractor ---
+# --- RSS Collector ---
 def collect_feed_items(max_per_feed=5):
     raw_candidates = []
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-        "Accept": "application/rss+xml, application/xml, text/xml, */*",
-        "Accept-Language": "en-US,en;q=0.9"
+        "Accept": "application/rss+xml, application/xml, text/xml, */*"
     }
 
     for cat, feed_list in SOURCES.items():
         for name, url in feed_list:
             try:
-                resp = requests.get(url, headers=headers, timeout=12)
+                resp = requests.get(url, headers=headers, timeout=10)
                 if resp.status_code != 200:
                     print(f"[!] {name} returned HTTP {resp.status_code}")
                     continue
@@ -129,7 +128,7 @@ def run_pipeline():
     """
 
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.8-flash",
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
@@ -151,7 +150,7 @@ def run_pipeline():
     with open("data/briefing.json", "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
-    print(f"[✓] Published edition with {len(output['stories'])} stories to data/briefing.json")
+    print(f"[✓] Successfully published {len(output['stories'])} stories to data/briefing.json")
 
 if __name__ == "__main__":
     run_pipeline()
