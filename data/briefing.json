@@ -1,119 +1,110 @@
 {
-  "edition_date": "2026-10-30",
-  "generated_at": "2026-10-30T07:36:24.171193+00:00",
+  "edition_date": "2026-11-11",
+  "generated_at": "2026-11-11T08:07:36.750794+00:00",
   "daily_quote": {
-    "quote": "The more a thing is perfect, the more it acts and the less it suffers.",
-    "author": "Baruch Spinoza",
-    "source": "Ethics"
+    "quote": "We are what we repeatedly do. Excellence, then, is not an act but a habit.",
+    "author": "Aristotle",
+    "source": "Often attributed to Aristotle; phrasing popularized by Will Durant"
   },
   "stories": [
     {
-      "title": "Critical Linux Kernel TCP Vulnerability Enables Remote Root Exploitation",
+      "title": "Cisco BroadWorks and Openwave Flaws Added to CISA Known Exploited Vulnerabilities Catalog",
       "category": "cybersecurity",
       "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html",
-      "summary": "A severe flaw in the Linux kernel TCP implementation, tracked as CVE-2026-98432, carries a CVSS score of 9.8 and impacts major distributions including Ubuntu and RHEL. Researchers demonstrated that unauthenticated remote attackers can execute arbitrary commands with root privileges across affected Linux hosts.",
-      "why_it_matters": "Because the vulnerability resides in core networking code across ubiquitous Linux distributions, unauthenticated remote code execution poses an immediate threat to global server infrastructure.",
-      "published_at": "Thu, 29 Oct 2026 21:27:05 +0530"
+      "source_url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency added actively exploited vulnerabilities in Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities catalog. The Cisco flaw, tracked as CVE-2026-20320, stems from improper restriction of XML external entity references that attackers can exploit despite patches being available.",
+      "why_it_matters": "Active exploitation of telecommunications and messaging infrastructure poses high operational risks to enterprise communication backbones.",
+      "published_at": "Wed, 11 Nov 2026 11:34:02 +0530"
     },
     {
-      "title": "Binance Investigates Multi-Billion-Dollar Security Breach Impacting Custodial Assets",
+      "title": "Git Patches Integer Truncation Vulnerability Enabling Arbitrary Code Execution",
       "category": "cybersecurity",
       "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
-      "summary": "Cryptocurrency exchange Binance announced that a platform security incident impacted approximately $6.3 billion worth of digital assets. Major stablecoin issuers and ecosystem partners have responded by freezing nearly $3 billion of the compromised tokens on-chain.",
-      "why_it_matters": "Representing one of the largest financial cybersecurity incidents recorded, the breach highlights systemic architectural risks in custodial exchange operations and cross-chain asset management.",
-      "published_at": "Fri, 30 Oct 2026 09:44:59 +0530"
+      "source_url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+      "summary": "The Git project released updates across multiple release series to remediate CVE-2026-111760, an integer truncation bug in index handling. The vulnerability allows a crafted malicious repository containing submodules to execute arbitrary code on a user's machine during recursive cloning.",
+      "why_it_matters": "Developer toolchain vulnerabilities like Git clone execution compromise build infrastructure and workstation security without requiring user code execution.",
+      "published_at": "Wed, 11 Nov 2026 00:53:10 +0530"
     },
     {
-      "title": "Active Exploitation of PHP2Shell Vulnerability Targets Government Servers",
+      "title": "SGLang Remote Code Execution Vulnerability Leads to NEAR AI Infrastructure Breach",
       "category": "cybersecurity",
-      "source_name": "The Record",
-      "source_url": "https://therecord.media/php2shell-successful-exploitation-reports-emerge",
-      "summary": "Cybersecurity firms have observed active exploitation of the PHP2Shell vulnerability targeting high-value infrastructure including United States government-affiliated networks. Investigators attributed the initial wave of intrusions to sophisticated, suspected state-aligned threat actors.",
-      "why_it_matters": "Immediate weaponization of the vulnerability leaves unpatched enterprise and public sector web services vulnerable to automated remote compromise.",
-      "published_at": "Thu, 29 Oct 2026 20:01:25 GMT"
+      "source_name": "The Hacker News",
+      "source_url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+      "summary": "Threat actors exploited a remote code execution vulnerability in the open-source inference engine SGLang to breach an inference server hosted by NEAR AI. The intrusion exposed active user requests, compromising data from roughly 100 users and 18 AI agents, including workloads routed through confidential computing environments.",
+      "why_it_matters": "Flaws in open-source AI serving runtimes can bypass confidential computing protections and compromise model inference data at runtime.",
+      "published_at": "Wed, 11 Nov 2026 00:49:39 +0530"
     },
     {
-      "title": "Persistent Hugging Face Malware Campaign Resurfaces to Hijack GPU Clusters",
+      "title": "Zero-Day Authentication Bypass in Xen Orchestra Actively Exploited in the Wild",
+      "category": "cybersecurity",
+      "source_name": "The Hacker News",
+      "source_url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+      "summary": "Vates VMS issued an advisory warning that an unauthenticated bypass tracked as VSA-2026-062 is seeing active in-the-wild exploitation against Xen Orchestra installations. The flaw allows external actors to supply a malformed REST cookie that parses improperly and grants administrative access to hypervisor management environments.",
+      "why_it_matters": "Compromising Xen Orchestra allows adversaries to obtain unrestricted management control over hypervisors and underlying virtual machines.",
+      "published_at": "Tue, 10 Nov 2026 23:42:21 +0530"
+    },
+    {
+      "title": "Compromised Vendor AWS IAM Credentials Lead to Multi-Tenant Cloud Data Exfiltration",
       "category": "cybersecurity",
       "source_name": "BleepingComputer",
-      "source_url": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
-      "summary": "A recurring malware campaign has targeted the Hugging Face repository, uploading backdoored machine learning models designed to hijack GPU servers for cryptomining and lateral movement. One malicious model garnered more than 28,000 downloads prior to discovery and subsequent containment.",
-      "why_it_matters": "The campaign highlights growing supply-chain risks in open machine learning repositories, where untrusted model weights can compromise high-performance computing hardware.",
-      "published_at": "Thu, 29 Oct 2026 18:09:24 -0400"
+      "source_url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/",
+      "summary": "An attacker leveraged compromised Identity and Access Management credentials associated with big data provider Qubole to infiltrate connected customer cloud environments. Using cross-account permissions established for the management platform, the attacker exfiltrated data directly from client storage deployments across several organizations.",
+      "why_it_matters": "Cross-account IAM trust relationships create persistent lateral movement vectors that bypass individual tenant boundary defenses.",
+      "published_at": "Tue, 10 Nov 2026 14:31:11 -0500"
     },
     {
-      "title": "Polymarket Halts Trading Operations After Third-Party Script Compromise",
+      "title": "Microsoft November 2026 Patch Tuesday Fixes Record 1,235 Flaws and Exploited Outlook Zero-Day",
       "category": "cybersecurity",
       "source_name": "BleepingComputer",
-      "source_url": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
-      "summary": "Prediction market platform Polymarket temporarily suspended trading after attackers compromised an integrated third-party service to inject asset-draining JavaScript. Blockchain investigators traced approximately $2.5 million in unauthorized token transfers to a wallet linked to the threat actors.",
-      "why_it_matters": "The breach demonstrates the continued vulnerability of decentralized application web interfaces to client-side supply-chain attacks.",
-      "published_at": "Thu, 29 Oct 2026 17:47:25 -0400"
+      "source_url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
+      "summary": "Microsoft published its November 2026 security release addressing 1,235 vulnerabilities across the Windows ecosystem. The rollout remediates one zero-day vulnerability in Microsoft Outlook that was actively targeted by threat actors in production environments prior to patching.",
+      "why_it_matters": "High-volume patch releases containing zero-day enterprise communication vulnerabilities demand rapid remediation to avoid perimeter and client compromise.",
+      "published_at": "Tue, 10 Nov 2026 14:07:36 -0500"
     },
     {
-      "title": "Cyberattack Forces Suspension of Belgian National Digital Tax Platform",
+      "title": "Railway Infrastructure Breach Exposes Authentication Keys and Triggers AI Fraud",
       "category": "cybersecurity",
-      "source_name": "The Record",
-      "source_url": "https://therecord.media/cyberattack-disrupts-belgian-tax-services-before-deadline",
-      "summary": "The Belgian Federal Public Service Finance took its primary digital tax platform, MyMinfin, offline following a disruptive cyberattack. The emergency shutdown coincided with an approaching national filing deadline, triggering operational reviews across federal financial IT infrastructure.",
-      "why_it_matters": "The incident illustrates the direct societal and administrative impact of cyber disruptions directed against centralized governmental digital infrastructure.",
-      "published_at": "Thu, 29 Oct 2026 13:31:00 GMT"
+      "source_name": "BleepingComputer",
+      "source_url": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/",
+      "summary": "Cloud deployment platform Railway sustained an infrastructure compromise that exposed sensitive secrets and API tokens for up to 100,000 customer workspaces. Intruders leveraged the exfiltrated platform keys to rack up approximately $740,000 in unauthorized artificial intelligence inference workloads.",
+      "why_it_matters": "Centralized infrastructure-as-a-service providers remain prime targets for secret harvesting that directly translates to high compute resource theft.",
+      "published_at": "Tue, 10 Nov 2026 17:20:19 -0500"
     },
     {
-      "title": "Google Announces Gemini 4 Carbon with Autonomous Cybersecurity Capabilities",
-      "category": "tech",
+      "title": "Three Distinct China-Nexus Espionage Campaigns Linked to Shared Sparrow Ecosystem",
+      "category": "cybersecurity",
       "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
-      "summary": "Google launched Gemini 4 Carbon, an advanced foundation model engineered for automated vulnerability discovery, exploitation testing, and code remediation. The model established new performance benchmarks across industry security suites, including SEC-bench Pro and ExploitGym.",
-      "why_it_matters": "The rapid evolution of autonomous agents capable of finding and patching software flaws fundamentally alters both offensive vulnerability research and defensive software assurance.",
-      "published_at": "Thu, 29 Oct 2026 19:12:40 +0530"
+      "source_url": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
+      "summary": "Check Point Research identified shared codebases and infrastructure tying together three separate advanced threat clusters targeting critical infrastructure, defense, and telecommunications. Dubbed the Sparrow ecosystem, the campaigns demonstrated persistent access mechanisms targeting global entities across Europe, Asia, and Latin America.",
+      "why_it_matters": "Infrastructure consolidation among state-sponsored espionage groups indicates formalized software supply chains within nation-state offensive cyber operations.",
+      "published_at": "Tue, 10 Nov 2026 23:13:23 +0530"
     },
     {
-      "title": "General Motors Settles Multi-State Driver Telematics Privacy Case for $220 Million",
-      "category": "tech",
-      "source_name": "The Record",
-      "source_url": "https://therecord.media/general-motors-lawsuit-privacy",
-      "summary": "General Motors reached a $220 million settlement with 36 state attorneys general over allegations that the automaker secretly harvested and sold driver behavioral telemetry to third-party data brokers. The resolution requires extensive data governance reforms and strict limits on commercial telemetry distribution.",
-      "why_it_matters": "This landmark settlement establishes formal regulatory boundaries and financial penalties for automotive and IoT original equipment manufacturers commercializing telemetry data.",
-      "published_at": "Thu, 29 Oct 2026 19:45:00 GMT"
-    },
-    {
-      "title": "Pentagon Watchdog Declines Oversight Inquiry into Commercial Satellite Networks",
+      "title": "Mass Configuration Flaw in Grok Build Coding Platform Exposes Sensitive Corporate Repositories",
       "category": "tech",
       "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/tech-policy/2026/10/pentagon-ig-refuses-to-investigate-starlink-starshield-slowdown-in-ukraine/",
-      "summary": "The Department of Defense Inspector General formally rejected bipartisan requests from lawmakers to probe service interruptions affecting Starlink and Starshield operational links in Ukraine. The inquiry had sought to clarify the boundaries of military reliance on private space constellations during active warfare.",
-      "why_it_matters": "The decision highlights institutional friction and transparency deficits surrounding military dependence on proprietary low-Earth-orbit satellite networks.",
-      "published_at": "Thu, 29 Oct 2026 20:08:10 +0000"
+      "source_url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+      "summary": "Security researchers discovered that 35,000 applications generated via the Grok Build AI coding agent were exposed online without adequate access controls. The open environments exposed proprietary codebases, internal infrastructure keys, and confidential assets belonging to multiple enterprises, including SpaceX.",
+      "why_it_matters": "Automated code generation tools introducing default-insecure deployment postures represent a growing systemic risk to enterprise source code security.",
+      "published_at": "Tue, 10 Nov 2026 21:12:59 +0000"
     },
     {
-      "title": "United States Designates Industrial Robot Imports a National Security Concern",
+      "title": "US Military Expresses Concerns Over Severe Space Launch Capacity Bottlenecks",
       "category": "tech",
       "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/",
-      "summary": "The United States executive branch issued a determination classifying foreign-manufactured industrial robotics as a critical national security threat. The administration initiated targeted trade negotiations and threatened tariffs to restrict foreign robotic equipment within domestic automated manufacturing.",
-      "why_it_matters": "Targeting advanced factory automation systems signals escalating technological protectionism aimed at defending smart manufacturing and industrial control architecture.",
-      "published_at": "Thu, 29 Oct 2026 19:07:53 +0000"
+      "source_url": "https://arstechnica.com/space/2026/11/the-us-military-seems-to-be-getting-nervous-about-the-launch-supply-crunch/",
+      "summary": "Department of Defense defense officials warned that commercial and national security launch capacity has reached critical bottlenecks due to constrained orbital rocket availability. The shortage threatens the deployment cadence of defense satellite constellations as launch manifests remain monopolized and delayed across major aerospace providers.",
+      "why_it_matters": "A shortage of heavy and medium-lift launch architecture creates strategic bottlenecks for global communications and orbital reconnaissance infrastructure.",
+      "published_at": "Tue, 10 Nov 2026 23:02:39 +0000"
     },
     {
-      "title": "Chemists Develop Catalytic Pathway for Back-to-Monomer Silicone Recycling",
-      "category": "science",
-      "source_name": "Nature News",
-      "source_url": "https://www.nature.com/articles/s41586-026-11335-4",
-      "summary": "Researchers reported a catalytic deoxygenative chlorination process capable of breaking down stable silicone polymers back into their original chlorosilane monomers. The protocol provides a direct chemical pathway for recovering pristine building blocks from previously non-recyclable industrial silicone waste.",
-      "why_it_matters": "Overcoming the chemical durability of silicone polymers solves a long-standing environmental bottleneck and enables circularity in industrial polymer manufacturing.",
-      "published_at": "2026-10-30T07:35:31.786768+00:00"
-    },
-    {
-      "title": "Cosmic Background Observations Rule Out Stupendous Black Holes as Dark Matter",
-      "category": "science",
-      "source_name": "Nature News",
-      "source_url": "https://www.nature.com/articles/d41586-026-03386-4",
-      "summary": "A new astrophysical study of cosmic microwave background radiation determined that primordial stupendous black holes cannot account for missing dark matter mass in the universe. Theoretical modeling showed that such ultra-massive objects would have generated distinct thermodynamic distortions that are entirely absent in empirical datasets.",
-      "why_it_matters": "Ruling out ultra-massive primordial black hole candidates substantially narrows the theoretical search space for the fundamental constituents of dark matter.",
-      "published_at": "2026-10-30T07:35:31.786754+00:00"
+      "title": "New York State Begins Enforcement of Mandatory AI Safety and Risk Disclosure Law",
+      "category": "tech",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+      "summary": "New York state authorities have commenced enforcement of a comprehensive AI safety statute targeting frontier artificial intelligence laboratories such as OpenAI and Anthropic. The regulatory framework compels developers to register models, submit safety protocol audits, and disclose critical technical incidents under threat of statutory fines.",
+      "why_it_matters": "State-level compliance requirements impose binding architectural transparency and incident-reporting protocols on leading foundational model providers.",
+      "published_at": "Tue, 10 Nov 2026 20:52:13 +0000"
     }
   ]
 }
