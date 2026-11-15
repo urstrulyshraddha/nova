@@ -1,110 +1,137 @@
 {
-  "edition_date": "2026-11-11",
-  "generated_at": "2026-11-11T08:07:36.750794+00:00",
+  "edition_date": "2026-11-15",
+  "generated_at": "2026-11-15T08:21:10.553150+00:00",
   "daily_quote": {
-    "quote": "We are what we repeatedly do. Excellence, then, is not an act but a habit.",
-    "author": "Aristotle",
-    "source": "Often attributed to Aristotle; phrasing popularized by Will Durant"
+    "quote": "The world is full of obvious things which nobody by any chance ever observes.",
+    "author": "Arthur Conan Doyle",
+    "source": "The Hound of the Baskervilles"
   },
   "stories": [
     {
-      "title": "Cisco BroadWorks and Openwave Flaws Added to CISA Known Exploited Vulnerabilities Catalog",
+      "title": "Mior and Skyfall Attacks Enable Secrets Extraction from AMD SEV-SNP VMs",
       "category": "cybersecurity",
       "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency added actively exploited vulnerabilities in Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities catalog. The Cisco flaw, tracked as CVE-2026-20320, stems from improper restriction of XML external entity references that attackers can exploit despite patches being available.",
-      "why_it_matters": "Active exploitation of telecommunications and messaging infrastructure poses high operational risks to enterprise communication backbones.",
-      "published_at": "Wed, 11 Nov 2026 11:34:02 +0530"
+      "source_url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+      "summary": "Researchers revealed two vulnerabilities named Mior and Skyfall that allow malicious host operators to access confidential data inside AMD SEV-SNP-protected virtual machines. The attacks compromise hypervisors and BIOS environments to tamper with memory integrity and forge cryptographic attestation reports.",
+      "why_it_matters": "The exploits undermine the trust model of hardware-enforced confidential computing, allowing malicious cloud providers to breach protected guest workloads.",
+      "published_at": "Fri, 13 Nov 2026 20:57:05 +0530"
     },
     {
-      "title": "Git Patches Integer Truncation Vulnerability Enabling Arbitrary Code Execution",
+      "title": "PostgreSQL Fixes Critical 22-Year-Old Flaw Enabling Authenticated RCE",
       "category": "cybersecurity",
       "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
-      "summary": "The Git project released updates across multiple release series to remediate CVE-2026-111760, an integer truncation bug in index handling. The vulnerability allows a crafted malicious repository containing submodules to execute arbitrary code on a user's machine during recursive cloning.",
-      "why_it_matters": "Developer toolchain vulnerabilities like Git clone execution compromise build infrastructure and workstation security without requiring user code execution.",
-      "published_at": "Wed, 11 Nov 2026 00:53:10 +0530"
+      "source_url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+      "summary": "PostgreSQL maintainers resolved a type confusion flaw tracked as CVE-2026-6460 that allows database users with object creation privileges to execute arbitrary server code. Complete remediation requires upgrading the engine alongside rebuilding all compiled C-language extensions.",
+      "why_it_matters": "The bug exposes core enterprise database servers to privilege escalation and persistent underlying operating system compromise.",
+      "published_at": "Fri, 13 Nov 2026 22:23:08 +0530"
     },
     {
-      "title": "SGLang Remote Code Execution Vulnerability Leads to NEAR AI Infrastructure Breach",
+      "title": "Active Command Injection Vulnerability in UnrealIRCd Added to CISA KEV",
       "category": "cybersecurity",
       "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
-      "summary": "Threat actors exploited a remote code execution vulnerability in the open-source inference engine SGLang to breach an inference server hosted by NEAR AI. The intrusion exposed active user requests, compromising data from roughly 100 users and 18 AI agents, including workloads routed through confidential computing environments.",
-      "why_it_matters": "Flaws in open-source AI serving runtimes can bypass confidential computing protections and compromise model inference data at runtime.",
-      "published_at": "Wed, 11 Nov 2026 00:49:39 +0530"
+      "source_url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+      "summary": "CISA added a high-severity command injection vulnerability impacting UnrealIRCd, designated CVE-2026-114713, to its Known Exploited Vulnerabilities catalog. The flaw stems from improper delimiter neutralization and enables attackers to execute commands at the server level.",
+      "why_it_matters": "Active exploitation of command injection flaws in communications infrastructure exposes internal operational networks to lateral movement and compromise.",
+      "published_at": "Sat, 14 Nov 2026 18:08:35 +0530"
     },
     {
-      "title": "Zero-Day Authentication Bypass in Xen Orchestra Actively Exploited in the Wild",
-      "category": "cybersecurity",
-      "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
-      "summary": "Vates VMS issued an advisory warning that an unauthenticated bypass tracked as VSA-2026-062 is seeing active in-the-wild exploitation against Xen Orchestra installations. The flaw allows external actors to supply a malformed REST cookie that parses improperly and grants administrative access to hypervisor management environments.",
-      "why_it_matters": "Compromising Xen Orchestra allows adversaries to obtain unrestricted management control over hypervisors and underlying virtual machines.",
-      "published_at": "Tue, 10 Nov 2026 23:42:21 +0530"
-    },
-    {
-      "title": "Compromised Vendor AWS IAM Credentials Lead to Multi-Tenant Cloud Data Exfiltration",
+      "title": "Check Point Gateways Targeted via PHP2Shell to Deploy VMware ESXi Wipers",
       "category": "cybersecurity",
       "source_name": "BleepingComputer",
-      "source_url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/",
-      "summary": "An attacker leveraged compromised Identity and Access Management credentials associated with big data provider Qubole to infiltrate connected customer cloud environments. Using cross-account permissions established for the management platform, the attacker exfiltrated data directly from client storage deployments across several organizations.",
-      "why_it_matters": "Cross-account IAM trust relationships create persistent lateral movement vectors that bypass individual tenant boundary defenses.",
-      "published_at": "Tue, 10 Nov 2026 14:31:11 -0500"
+      "source_url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
+      "summary": "Threat actors exploited unpatched Check Point Security Gateways using the PHP2Shell attack vector to breach enterprise perimeters. After gaining an initial foothold, the operators pivoted into virtualized infrastructure to execute destructive wiper payloads on VMware ESXi hypervisors.",
+      "why_it_matters": "Chaining perimeter gateway vulnerabilities directly to hypervisor-level data destruction poses catastrophic operational continuity risks for virtualized data centers.",
+      "published_at": "Fri, 13 Nov 2026 11:21:43 -0500"
     },
     {
-      "title": "Microsoft November 2026 Patch Tuesday Fixes Record 1,235 Flaws and Exploited Outlook Zero-Day",
+      "title": "Cursor Breach Leads to Distribution of Malicious Claude Code Extension",
       "category": "cybersecurity",
       "source_name": "BleepingComputer",
-      "source_url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
-      "summary": "Microsoft published its November 2026 security release addressing 1,235 vulnerabilities across the Windows ecosystem. The rollout remediates one zero-day vulnerability in Microsoft Outlook that was actively targeted by threat actors in production environments prior to patching.",
-      "why_it_matters": "High-volume patch releases containing zero-day enterprise communication vulnerabilities demand rapid remediation to avoid perimeter and client compromise.",
-      "published_at": "Tue, 10 Nov 2026 14:07:36 -0500"
+      "source_url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+      "summary": "AI code editor Cursor confirmed an intrusion that allowed attackers to publish a compromised Claude Code extension directly to its marketplace. Attackers executed the supply chain breach using stolen credentials from artificial intelligence infrastructure provider Fireworks AI.",
+      "why_it_matters": "Software supply chain attacks on developer tooling and IDE ecosystems can expose downstream source code and internal enterprise environments at scale.",
+      "published_at": "Sat, 14 Nov 2026 12:27:25 -0500"
     },
     {
-      "title": "Railway Infrastructure Breach Exposes Authentication Keys and Triggers AI Fraud",
-      "category": "cybersecurity",
-      "source_name": "BleepingComputer",
-      "source_url": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/",
-      "summary": "Cloud deployment platform Railway sustained an infrastructure compromise that exposed sensitive secrets and API tokens for up to 100,000 customer workspaces. Intruders leveraged the exfiltrated platform keys to rack up approximately $740,000 in unauthorized artificial intelligence inference workloads.",
-      "why_it_matters": "Centralized infrastructure-as-a-service providers remain prime targets for secret harvesting that directly translates to high compute resource theft.",
-      "published_at": "Tue, 10 Nov 2026 17:20:19 -0500"
-    },
-    {
-      "title": "Three Distinct China-Nexus Espionage Campaigns Linked to Shared Sparrow Ecosystem",
+      "title": "Hardware Supply Chain Attack Found in Trezor Safe 5 Crypto Wallets",
       "category": "cybersecurity",
       "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
-      "summary": "Check Point Research identified shared codebases and infrastructure tying together three separate advanced threat clusters targeting critical infrastructure, defense, and telecommunications. Dubbed the Sparrow ecosystem, the campaigns demonstrated persistent access mechanisms targeting global entities across Europe, Asia, and Latin America.",
-      "why_it_matters": "Infrastructure consolidation among state-sponsored espionage groups indicates formalized software supply chains within nation-state offensive cyber operations.",
-      "published_at": "Tue, 10 Nov 2026 23:13:23 +0530"
+      "source_url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+      "summary": "Trezor confirmed that units sold by third-party reseller CryptoBilis were modified with custom hardware implants containing cellular modems. The concealed circuit boards read private recovery seed phrases directly from the device displays and exfiltrated them to remote servers.",
+      "why_it_matters": "Physical supply chain tampering bypasses standard cryptographic protections and demonstrates increasing sophistication in targeting air-gapped cryptographic hardware.",
+      "published_at": "Fri, 13 Nov 2026 19:24:20 +0530"
     },
     {
-      "title": "Mass Configuration Flaw in Grok Build Coding Platform Exposes Sensitive Corporate Repositories",
+      "title": "FBI Warns of Machine-Speed Cyberattacks Powered by Automated Artex Tool",
+      "category": "cybersecurity",
+      "source_name": "The Record",
+      "source_url": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
+      "summary": "The FBI issued a flash alert regarding Artex, an open-source automation utility accelerating attack chain execution. According to the advisory, the tool compresses intrusion lifecycles from reconnaissance to domain administrative privilege in less than three hours.",
+      "why_it_matters": "High-velocity automated exploitation drastically cuts the time window available for incident response teams and automated threat detection systems to intervene.",
+      "published_at": "Fri, 13 Nov 2026 21:32:00 GMT"
+    },
+    {
+      "title": "German Defense Drone Maker Quantum Systems Disrupted by Cyberattack",
+      "category": "cybersecurity",
+      "source_name": "BleepingComputer",
+      "source_url": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
+      "summary": "Military drone manufacturer Quantum Systems suffered operational disruptions following a cyberattack by hostile actors. The incident affected defense-related production and support pipelines associated with deployed European tactical systems.",
+      "why_it_matters": "Direct adversary intrusions against active defense tech contractors threaten battlefield unmanned aerial vehicle logistics and supply chain stability.",
+      "published_at": "Fri, 13 Nov 2026 12:31:56 -0500"
+    },
+    {
+      "title": "German Bundestag Passes Law Authorizing State Offensive Hacking and Sabotage",
+      "category": "cybersecurity",
+      "source_name": "The Record",
+      "source_url": "https://therecord.media/german-parliament-passes-law-giving-spy-agencies-hacking-power",
+      "summary": "Germany's parliament approved landmark legislation enabling intelligence agencies to conduct active counter-cyberattacks and digital sabotage. The legal framework marks the most comprehensive expansion of the country's national security intelligence powers in the postwar period.",
+      "why_it_matters": "The law solidifies the normalization of state-sponsored offensive cyber operations and pre-emptive digital disruption in European legal frameworks.",
+      "published_at": "Fri, 13 Nov 2026 16:32:00 GMT"
+    },
+    {
+      "title": "US Disrupts North Korean FaceStealer Deepfake Campaign Behind $400M Theft",
+      "category": "cybersecurity",
+      "source_name": "The Hacker News",
+      "source_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+      "summary": "Federal authorities coordinated a disruption of FaceStealer, an 18-month North Korean social engineering operation that netted over $400 million in digital assets. Threat actors leveraged real-time generative video deepfakes during recruitment calls to compromise high-value targets.",
+      "why_it_matters": "The operation demonstrates how nation-state actors operationalize synthetic media to bypass conventional identity verification and human authentication safeguards.",
+      "published_at": "Fri, 13 Nov 2026 19:58:58 +0530"
+    },
+    {
+      "title": "Routine Copper-to-Fiber Transition Triggered Nationwide FAA Ground Stop",
       "category": "tech",
+      "source_name": "The Verge",
+      "source_url": "https://www.theverge.com/transportation/1033898/faa-ground-stop-sean-duffy-faa-copper-wire",
+      "summary": "Transportation officials confirmed that a nationwide domestic flight grounding was triggered by maintenance replacing legacy copper wire with fiber optics at an FAA facility. The incident represented the third national flight halt in the agency's history and knocked out core telecommunications paths.",
+      "why_it_matters": "The ground stop highlights severe systemic vulnerabilities and brittle failover mechanics within national critical transport infrastructure during legacy migration work.",
+      "published_at": "2026-11-14T12:44:28-05:00"
+    },
+    {
+      "title": "SpaceX Completes First Starship Vehicle Catch Using Mechazilla Tower",
+      "category": "tech",
+      "source_name": "The Verge",
+      "source_url": "https://www.theverge.com/science/1033930/spacex-chopstick-starship-catch",
+      "summary": "SpaceX successfully caught the upper-stage Starship vehicle with launch tower chopstick arms during Flight 15 recovery operations. This milestone marks the first recovery of the second-stage spacecraft itself using mechanical tower capture rather than landing legs.",
+      "why_it_matters": "Validating tower capture of the upper stage is a critical engineering prerequisite for rapid multi-manifest turnaround and low-cost orbital access.",
+      "published_at": "2026-11-14T16:44:44-05:00"
+    },
+    {
+      "title": "Interpretable AI Framework Analyzes and Debugs Latent Neural Network Circuits",
+      "category": "science",
+      "source_name": "Nature News",
+      "source_url": "https://www.nature.com/articles/d41586-026-03679-8",
+      "summary": "Researchers published a mechanistic interpretability model capable of diagnosing and tracing latent representations within complex neural networks. The inspection framework systematically isolates hidden failures and decision-making logic inside deep learning architectures.",
+      "why_it_matters": "Automating internal mechanistic analysis provides a foundation for verifying model safety, addressing hallucination, and establishing algorithmic explainability.",
+      "published_at": "2026-11-15T08:14:34.511937+00:00"
+    },
+    {
+      "title": "James Webb Space Telescope Identifies Interstellar Ice Predating Host Star",
+      "category": "science",
       "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
-      "summary": "Security researchers discovered that 35,000 applications generated via the Grok Build AI coding agent were exposed online without adequate access controls. The open environments exposed proprietary codebases, internal infrastructure keys, and confidential assets belonging to multiple enterprises, including SpaceX.",
-      "why_it_matters": "Automated code generation tools introducing default-insecure deployment postures represent a growing systemic risk to enterprise source code security.",
-      "published_at": "Tue, 10 Nov 2026 21:12:59 +0000"
-    },
-    {
-      "title": "US Military Expresses Concerns Over Severe Space Launch Capacity Bottlenecks",
-      "category": "tech",
-      "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/space/2026/11/the-us-military-seems-to-be-getting-nervous-about-the-launch-supply-crunch/",
-      "summary": "Department of Defense defense officials warned that commercial and national security launch capacity has reached critical bottlenecks due to constrained orbital rocket availability. The shortage threatens the deployment cadence of defense satellite constellations as launch manifests remain monopolized and delayed across major aerospace providers.",
-      "why_it_matters": "A shortage of heavy and medium-lift launch architecture creates strategic bottlenecks for global communications and orbital reconnaissance infrastructure.",
-      "published_at": "Tue, 10 Nov 2026 23:02:39 +0000"
-    },
-    {
-      "title": "New York State Begins Enforcement of Mandatory AI Safety and Risk Disclosure Law",
-      "category": "tech",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
-      "summary": "New York state authorities have commenced enforcement of a comprehensive AI safety statute targeting frontier artificial intelligence laboratories such as OpenAI and Anthropic. The regulatory framework compels developers to register models, submit safety protocol audits, and disclose critical technical incidents under threat of statutory fines.",
-      "why_it_matters": "State-level compliance requirements impose binding architectural transparency and incident-reporting protocols on leading foundational model providers.",
-      "published_at": "Tue, 10 Nov 2026 20:52:13 +0000"
+      "source_url": "https://arstechnica.com/science/2026/11/james-webb-telescope-finds-ice-older-than-the-star-it-orbits/",
+      "summary": "Spectroscopic observations by the James Webb Space Telescope uncovered pristine volatile ice in a protoplanetary disk that pre-dates the parent star. The discovery indicates that primordial organic molecules survive initial stellar collapse and incorporate intact into emerging planetary systems.",
+      "why_it_matters": "The finding refines core astrophysical models of planetary formation and provides insights into the delivery of initial prebiotic chemical precursors.",
+      "published_at": "Sat, 14 Nov 2026 12:15:48 +0000"
     }
   ]
 }
