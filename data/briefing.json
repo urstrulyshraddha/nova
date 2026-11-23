@@ -1,119 +1,119 @@
 {
-  "edition_date": "2026-11-21",
-  "generated_at": "2026-11-21T08:39:16.626537+00:00",
+  "edition_date": "2026-11-23",
+  "generated_at": "2026-11-23T09:40:58.415170+00:00",
   "daily_quote": {
-    "quote": "The happiness of your life depends upon the quality of your thoughts.",
-    "author": "Marcus Aurelius",
-    "source": "Meditations, Book III"
+    "quote": "First say to yourself what you would be; then do what you have to do.",
+    "author": "Epictetus",
+    "source": "Discourses, Book III"
   },
   "stories": [
     {
-      "title": "Linux KVM Flaw Exposes Host Memory on AMD Systems",
+      "title": "AI-Assisted Cyberattacks Target Indian Financial Infrastructure",
       "category": "cybersecurity",
       "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
-      "summary": "Researchers discovered a critical hypervisor vulnerability in the Linux KVM module tracked as CVE-2026-99312. The flaw allowed a guest virtual machine on AMD hardware to read approximately 127 gigabytes of host memory, potentially exposing adjacent tenant data.",
-      "why_it_matters": "This vulnerability breaks cross-tenant isolation in multi-tenant cloud environments utilizing nested virtualization on AMD processors.",
-      "published_at": "Fri, 20 Nov 2026 17:50:00 +0530"
+      "source_url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+      "summary": "India's cybersecurity agency warned that threat actors are deploying artificial intelligence tools against communication and technology infrastructure across the country. These attacks have breached internal systems and triggered unauthorized payment transactions across multiple banks, fintech firms, and service providers.",
+      "why_it_matters": "The incident illustrates the operational shift toward automated, AI-assisted exploitation aimed directly at core financial transaction networks.",
+      "published_at": "Mon, 23 Nov 2026 13:54:15 +0530"
     },
     {
-      "title": "Autonomous AI Tool Cairn Discovers Zero-Day Vulnerability",
+      "title": "Data Theft Discovered Across AI Inference Providers via Zero Data Retention Bypass",
+      "category": "cybersecurity",
+      "source_name": "The Hacker News",
+      "source_url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+      "summary": "Security researchers discovered that attackers maintained unauthorized access inside three commercial AI inference hosts for several months without detection. The breach exfiltrated confidential prompts, including sensitive user requests explicitly tagged with Zero Data Retention security flags.",
+      "why_it_matters": "This breach exposes critical architectural risks in third-party inference routing and undermines contractual privacy assurances in enterprise AI pipelines.",
+      "published_at": "Sun, 22 Nov 2026 10:36:55 +0530"
+    },
+    {
+      "title": "Ghostscript Vulnerability Enables Sandbox Escape and Remote Code Execution",
+      "category": "cybersecurity",
+      "source_name": "The Hacker News",
+      "source_url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+      "summary": "Researchers published an exploit detailing a sandbox escape in Ghostscript triggered by malformed file uploads to web applications. Because numerous Linux servers rely on Ghostscript for background document processing, arbitrary malicious files can achieve remote command execution.",
+      "why_it_matters": "Ghostscript's ubiquitous deployment in automated server-side file pipelines makes document-processing sandbox escapes an acute risk for enterprise infrastructure.",
+      "published_at": "Sun, 22 Nov 2026 10:33:41 +0530"
+    },
+    {
+      "title": "Critical GPGME Library Flaw Exposes Applications via Malicious OpenPGP Keys",
+      "category": "cybersecurity",
+      "source_name": "The Hacker News",
+      "source_url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+      "summary": "The GnuPG project disclosed a critical memory-handling vulnerability in GPGME triggered when parsing OpenPGP keys containing oversized user identifiers. Attackers can supply specially crafted public keys to compromise dependent applications and exfiltrate private data.",
+      "why_it_matters": "Because GPGME is the standard cryptographic interface for countless enterprise utilities, memory flaws in the library threaten foundational software verification and encryption systems.",
+      "published_at": "Sat, 21 Nov 2026 16:35:53 +0530"
+    },
+    {
+      "title": "CISA Issues Warning Over Active Exploitation of Critical Cisco Expressway Flaw",
       "category": "cybersecurity",
       "source_name": "BleepingComputer",
-      "source_url": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
-      "summary": "Threat actors deployed an open-source AI penetration-testing framework named Cairn to autonomously discover a zero-day flaw in a medical imaging application. Once the vulnerability was identified, the automated framework executed an exploit chain that compromised the host server.",
-      "why_it_matters": "This incident marks a critical shift toward autonomous weaponized AI agents discovering and exploiting novel vulnerabilities without human intervention.",
-      "published_at": "Fri, 20 Nov 2026 12:30:00 -0500"
+      "source_url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+      "summary": "The Cybersecurity and Infrastructure Security Agency warned that threat actors are actively exploiting a critical remote code execution flaw in Cisco Expressway systems. Federal agencies were directed to remediate the vulnerability immediately to prevent perimeter compromise.",
+      "why_it_matters": "Edge communication and gateway appliances represent primary targets for initial enterprise access, making active exploitation of Cisco infrastructure an immediate threat.",
+      "published_at": "Mon, 23 Nov 2026 02:44:19 -0500"
     },
     {
-      "title": "Bell Canada Breached by Agentic Threat Actor",
+      "title": "GL.iNet Cloud Platform Vulnerability Exploited to Compromise Hardware Devices",
       "category": "cybersecurity",
       "source_name": "BleepingComputer",
-      "source_url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
-      "summary": "Telecommunications provider Bell Canada confirmed an intrusion by an agentic threat actor that compromised enterprise systems. Stolen records include data from internal systems dedicated to ordering and provisioning critical telecommunications circuits.",
-      "why_it_matters": "Compromising core circuit provisioning infrastructure presents serious supply chain and espionage risks for critical telecommunications customers.",
-      "published_at": "Fri, 20 Nov 2026 13:51:43 -0500"
+      "source_url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+      "summary": "Hardware vendor GL.iNet confirmed that attackers leveraged an exploit in its cloud management system to compromise networked routers and KVM hardware. The intrusion resulted in rogue backdoors and reverse shells being installed across customer edge equipment worldwide.",
+      "why_it_matters": "Cloud-based centralized device orchestration platforms present single-point-of-failure risks that can transform vendor access into widespread hardware backdoors.",
+      "published_at": "Sun, 22 Nov 2026 13:45:37 -0500"
     },
     {
-      "title": "N-able Server Breach Triggers Widespread Service Outage",
+      "title": "Cleverbridge Payment Platform Data Breach Exposes Customer Credit Card Details",
       "category": "cybersecurity",
       "source_name": "BleepingComputer",
-      "source_url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/",
-      "summary": "Managed service software vendor N-able suffered a server breach that directly disrupted core infrastructure. The incident caused global service outages across its Mail Assure and SpamExperts hosted cloud platforms.",
-      "why_it_matters": "Attacks on IT management software providers represent severe cascading supply chain risks for thousands of downstream corporate networks.",
-      "published_at": "Fri, 20 Nov 2026 08:18:36 -0500"
+      "source_url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+      "summary": "E-commerce billing platform Cleverbridge disclosed that an unauthorized intrusion compromised customers' full financial transaction data. Stolen information included payment card numbers along with CVV security verification codes.",
+      "why_it_matters": "Direct exfiltration of unencrypted card and verification numbers highlights severe compliance and cryptographic isolation failures within central payment processors.",
+      "published_at": "Sun, 22 Nov 2026 10:43:04 -0500"
     },
     {
-      "title": "NSA Experiences Internal Network Outages and Facilities Restrictions",
+      "title": "State Hackers Use Cairn AI Security Tool to Uncover Zero-Day Flaw",
+      "category": "cybersecurity",
+      "source_name": "The Record",
+      "source_url": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
+      "summary": "Amazon researchers reported that a China-aligned advanced persistent threat actor leveraged the open-source autonomous penetration testing framework Cairn against educational targets. Analysis indicates the automated tooling successfully discovered an unknown zero-day vulnerability during live intrusions.",
+      "why_it_matters": "The deployment of autonomous AI penetration tools by state actors accelerates the weaponization and real-time discovery of zero-day vulnerabilities in targeted networks.",
+      "published_at": "Fri, 20 Nov 2026 17:30:00 GMT"
+    },
+    {
+      "title": "National Security Agency Recovers From Widespread Internal Network Outages",
       "category": "cybersecurity",
       "source_name": "The Record",
       "source_url": "https://therecord.media/nsa-resumes-normal-operations-following-internal-disruptions",
-      "summary": "The National Security Agency operated under internal network disruptions that temporarily placed specific facilities under Code Orange operational status. While normal operations have officially resumed, certain sites still required delayed openings and supervisory clearance.",
-      "why_it_matters": "Operational disruptions inside premier signals intelligence infrastructure underscore persistent systemic vulnerabilities across classified networks.",
+      "summary": "The National Security Agency returned to baseline operations following severe disruptions that affected its internal classified and administrative networks. Operational centers had temporarily instituted localized Code Orange protocols and delayed facility access for non-essential staff.",
+      "why_it_matters": "Prolonged network disruption inside premier intelligence entities indicates acute internal architecture vulnerabilities or unprecedented lateral disruption.",
       "published_at": "Fri, 20 Nov 2026 16:06:00 GMT"
     },
     {
-      "title": "Vendor Breach Leaks Data for Major Financial Institutions",
-      "category": "cybersecurity",
-      "source_name": "BleepingComputer",
-      "source_url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
-      "summary": "JPMorgan Chase disclosed a data security incident caused by a compromised third-party service provider. The breach exposed personal records and marketing intelligence affecting customers of Chase, Visa, and Mastercard.",
-      "why_it_matters": "The incident highlights persistent third-party aggregate risk where a single service provider compromises multiple core financial institutions simultaneously.",
-      "published_at": "Fri, 20 Nov 2026 10:58:06 -0500"
-    },
-    {
-      "title": "Bazuka Android Malware Integrates LLM Framework for Scaled Operations",
-      "category": "cybersecurity",
-      "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
-      "summary": "Security researchers identified Bazuka, a novel Android malware framework that deploys fake screen overlays to harvest credentials and hijack device telemetry. The platform uniquely incorporates large language model automation to manage and interact with victims programmatically at scale.",
-      "why_it_matters": "Integrating automated language models into mobile botnets significantly scales social engineering efficacy and operational control without proportional operator overhead.",
-      "published_at": "Fri, 20 Nov 2026 22:28:16 +0530"
-    },
-    {
-      "title": "SonicWall Refuses Patches for Vulnerable Gen 6 Firewalls",
-      "category": "cybersecurity",
-      "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
-      "summary": "SonicWall has warned enterprise administrators to immediately decommission and isolate legacy Generation 6 firewalls from the public internet. The vendor explicitly announced that no further security patches will be issued for these edge appliances, even for critical vulnerabilities.",
-      "why_it_matters": "Unpatched, internet-facing perimeter appliances provide threat actors with easy initial access vectors via automated mass exploitation.",
-      "published_at": "Fri, 20 Nov 2026 16:08:22 +0530"
-    },
-    {
-      "title": "Canary Audit Exposes Widespread Data Leaks Across AI Supply Chain",
-      "category": "tech",
-      "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-      "summary": "A security researcher introduced two million canary tokens into production AI pipelines to track prompt retention and data flow. The empirical investigation revealed that confidential user prompts and embedded secrets routinely leak beyond trust boundaries across the machine learning supply chain.",
-      "why_it_matters": "The findings demonstrate systemic confidentiality failures in commercial LLM hosting, cache tiers, and training data pipelines.",
-      "published_at": "Fri, 20 Nov 2026 20:59:08 +0000"
-    },
-    {
-      "title": "SpaceX Military Contracts Face Scrutiny Over Starshield Performance in Ukraine",
+      "title": "Congressional Scrutiny Threatens Military Contracts Over Starshield Configuration Changes",
       "category": "tech",
       "source_name": "Ars Technica",
       "source_url": "https://arstechnica.com/space/2026/11/incoming-house-chair-threatens-spacex-funding-over-ukraine-controversy/",
-      "summary": "Congressional leadership has raised scrutiny regarding recent operational changes to SpaceX's Starshield satellite constellation deployed in Ukraine. Lawmakers warned that unilateral service modifications could endanger broader defense department contracts and future aerospace funding.",
-      "why_it_matters": "Operational disagreements between commercial orbital satellite providers and defense establishments threaten long-term integration of private space infrastructure into national defense architectures.",
+      "summary": "Congressional leaders initiated an inquiry into SpaceX following unauthorized operational adjustments to Starshield satellite constellations deployed in Ukraine. Lawmakers warned that unilateral network policy modifications could forfeit future satellite defense contracts.",
+      "why_it_matters": "The dispute highlights critical operational frictions when military command structures depend on commercial space and satellite telecommunications architectures.",
       "published_at": "Fri, 20 Nov 2026 22:16:51 +0000"
     },
     {
-      "title": "Simultaneous AI and Human Advances Claim Resolution to Riemann Hypothesis",
+      "title": "Atlanta Air Traffic Paralyzed by Delta Flight Management System Failure",
       "category": "tech",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
-      "summary": "An artificial intelligence system and an independent mathematician have both published competing proof candidates for the 167-year-old Riemann hypothesis. The mathematical community has commenced peer verification to evaluate the validity of both distinct theoretical approaches.",
-      "why_it_matters": "Proving the Riemann hypothesis carries profound implications for number theory and foundational prime-based cryptographic algorithms.",
-      "published_at": "Fri, 20 Nov 2026 19:32:08 +0000"
+      "source_name": "The Verge",
+      "source_url": "https://www.theverge.com/transportation/1039779/delta-flights-delayed-system-outage",
+      "summary": "A critical failure in the automated system responsible for aircraft weight and balance calculations halted Delta flight departures at Hartsfield-Jackson Atlanta International Airport. The outage triggered widespread nationwide cascading delays across the commercial aviation network.",
+      "why_it_matters": "Core dispatch and load balancing software represent single points of failure that can completely disable real-time global transport operations when resilience mechanisms fail.",
+      "published_at": "2026-11-22T12:46:44-05:00"
     },
     {
-      "title": "Voyager 1 Reaches Milestone Distance of One Light Day from Earth",
+      "title": "BepiColombo Spacecraft Reaches Mercury to Begin Joint Scientific Mission",
       "category": "science",
       "source_name": "Nature News",
-      "source_url": "https://www.nature.com/articles/d41586-026-03806-5",
-      "summary": "NASA's interstellar space probe Voyager 1 has officially crossed a distance of one light day from Earth. The achievement establishes a historical milestone as radio signals now require twenty-four hours each way to communicate with the craft.",
-      "why_it_matters": "Maintaining active telemetry at a full light-day distance validates long-duration deep space communications protocols across extreme interstellar baselines.",
-      "published_at": "2026-11-21T08:37:46.705437+00:00"
+      "source_url": "https://www.nature.com/articles/d41586-026-03803-8",
+      "summary": "The joint European and Japanese BepiColombo mission successfully entered Mercury's planetary orbit following an eight-year interplanetary cruise. The spacecraft has separated into two dedicated orbiters equipped to map the planet's magnetosphere, geology, and core composition.",
+      "why_it_matters": "Data collected by the dual orbiters will resolve fundamental questions regarding the formation and structural evolution of rocky planets close to parent stars.",
+      "published_at": "2026-11-23T09:33:01.324564+00:00"
     }
   ]
 }
