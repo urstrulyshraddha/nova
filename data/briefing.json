@@ -1,119 +1,146 @@
 {
-  "edition_date": "2026-11-23",
-  "generated_at": "2026-11-23T09:40:58.415170+00:00",
+  "edition_date": "2026-11-28",
+  "generated_at": "2026-11-28T09:17:10.755906+00:00",
   "daily_quote": {
-    "quote": "First say to yourself what you would be; then do what you have to do.",
-    "author": "Epictetus",
-    "source": "Discourses, Book III"
+    "quote": "The unexamined life is not worth living.",
+    "author": "Socrates",
+    "source": "Plato, Apology 38a"
   },
   "stories": [
     {
-      "title": "AI-Assisted Cyberattacks Target Indian Financial Infrastructure",
-      "category": "cybersecurity",
-      "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
-      "summary": "India's cybersecurity agency warned that threat actors are deploying artificial intelligence tools against communication and technology infrastructure across the country. These attacks have breached internal systems and triggered unauthorized payment transactions across multiple banks, fintech firms, and service providers.",
-      "why_it_matters": "The incident illustrates the operational shift toward automated, AI-assisted exploitation aimed directly at core financial transaction networks.",
-      "published_at": "Mon, 23 Nov 2026 13:54:15 +0530"
-    },
-    {
-      "title": "Data Theft Discovered Across AI Inference Providers via Zero Data Retention Bypass",
-      "category": "cybersecurity",
-      "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
-      "summary": "Security researchers discovered that attackers maintained unauthorized access inside three commercial AI inference hosts for several months without detection. The breach exfiltrated confidential prompts, including sensitive user requests explicitly tagged with Zero Data Retention security flags.",
-      "why_it_matters": "This breach exposes critical architectural risks in third-party inference routing and undermines contractual privacy assurances in enterprise AI pipelines.",
-      "published_at": "Sun, 22 Nov 2026 10:36:55 +0530"
-    },
-    {
-      "title": "Ghostscript Vulnerability Enables Sandbox Escape and Remote Code Execution",
-      "category": "cybersecurity",
-      "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
-      "summary": "Researchers published an exploit detailing a sandbox escape in Ghostscript triggered by malformed file uploads to web applications. Because numerous Linux servers rely on Ghostscript for background document processing, arbitrary malicious files can achieve remote command execution.",
-      "why_it_matters": "Ghostscript's ubiquitous deployment in automated server-side file pipelines makes document-processing sandbox escapes an acute risk for enterprise infrastructure.",
-      "published_at": "Sun, 22 Nov 2026 10:33:41 +0530"
-    },
-    {
-      "title": "Critical GPGME Library Flaw Exposes Applications via Malicious OpenPGP Keys",
-      "category": "cybersecurity",
-      "source_name": "The Hacker News",
-      "source_url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
-      "summary": "The GnuPG project disclosed a critical memory-handling vulnerability in GPGME triggered when parsing OpenPGP keys containing oversized user identifiers. Attackers can supply specially crafted public keys to compromise dependent applications and exfiltrate private data.",
-      "why_it_matters": "Because GPGME is the standard cryptographic interface for countless enterprise utilities, memory flaws in the library threaten foundational software verification and encryption systems.",
-      "published_at": "Sat, 21 Nov 2026 16:35:53 +0530"
-    },
-    {
-      "title": "CISA Issues Warning Over Active Exploitation of Critical Cisco Expressway Flaw",
+      "title": "Unpatched Cacti Zero-Day Vulnerability Exploited for Remote Code Execution",
       "category": "cybersecurity",
       "source_name": "BleepingComputer",
-      "source_url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
-      "summary": "The Cybersecurity and Infrastructure Security Agency warned that threat actors are actively exploiting a critical remote code execution flaw in Cisco Expressway systems. Federal agencies were directed to remediate the vulnerability immediately to prevent perimeter compromise.",
-      "why_it_matters": "Edge communication and gateway appliances represent primary targets for initial enterprise access, making active exploitation of Cisco infrastructure an immediate threat.",
-      "published_at": "Mon, 23 Nov 2026 02:44:19 -0500"
+      "source_url": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/",
+      "summary": "A critical zero-day vulnerability in the open-source Cacti network monitoring platform has been publicly disclosed alongside working exploit code. The flaw allows unauthenticated remote attackers to execute arbitrary system commands on exposed instances.",
+      "why_it_matters": "Network monitoring tools reside in privileged positions across enterprise networks, making unauthenticated remote code execution a high-risk entry vector for lateral movement.",
+      "published_at": "Fri, 27 Nov 2026 12:06:13 -0500"
     },
     {
-      "title": "GL.iNet Cloud Platform Vulnerability Exploited to Compromise Hardware Devices",
+      "title": "US Air Force Cloud Platform Breached in Series of Federal Intrusions",
       "category": "cybersecurity",
       "source_name": "BleepingComputer",
-      "source_url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
-      "summary": "Hardware vendor GL.iNet confirmed that attackers leveraged an exploit in its cloud management system to compromise networked routers and KVM hardware. The intrusion resulted in rogue backdoors and reverse shells being installed across customer edge equipment worldwide.",
-      "why_it_matters": "Cloud-based centralized device orchestration platforms present single-point-of-failure risks that can transform vendor access into widespread hardware backdoors.",
-      "published_at": "Sun, 22 Nov 2026 13:45:37 -0500"
+      "source_url": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
+      "summary": "Threat actors have compromised the US Air Force's Cloud One enterprise computing environment. The intrusion follows recent confirmed cybersecurity breaches across major federal entities, including the FBI, CIA, and Department of the Treasury.",
+      "why_it_matters": "A direct compromise of core defense cloud environments threatens operational integrity and sensitive mission computing across the US military branch.",
+      "published_at": "Fri, 27 Nov 2026 10:09:40 -0500"
     },
     {
-      "title": "Cleverbridge Payment Platform Data Breach Exposes Customer Credit Card Details",
-      "category": "cybersecurity",
-      "source_name": "BleepingComputer",
-      "source_url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
-      "summary": "E-commerce billing platform Cleverbridge disclosed that an unauthorized intrusion compromised customers' full financial transaction data. Stolen information included payment card numbers along with CVV security verification codes.",
-      "why_it_matters": "Direct exfiltration of unencrypted card and verification numbers highlights severe compliance and cryptographic isolation failures within central payment processors.",
-      "published_at": "Sun, 22 Nov 2026 10:43:04 -0500"
-    },
-    {
-      "title": "State Hackers Use Cairn AI Security Tool to Uncover Zero-Day Flaw",
+      "title": "SAP Investigates Source Code Compromise Following Infrastructure Intrusion",
       "category": "cybersecurity",
       "source_name": "The Record",
-      "source_url": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
-      "summary": "Amazon researchers reported that a China-aligned advanced persistent threat actor leveraged the open-source autonomous penetration testing framework Cairn against educational targets. Analysis indicates the automated tooling successfully discovered an unknown zero-day vulnerability during live intrusions.",
-      "why_it_matters": "The deployment of autonomous AI penetration tools by state actors accelerates the weaponization and real-time discovery of zero-day vulnerabilities in targeted networks.",
-      "published_at": "Fri, 20 Nov 2026 17:30:00 GMT"
+      "source_url": "https://therecord.media/sap-germany-cyberattack-github",
+      "summary": "Enterprise software vendor SAP confirmed an active cybersecurity incident after unauthorized parties accessed its development environments. Investigators are assessing reports indicating that attackers may have exfiltrated proprietary corporate source code.",
+      "why_it_matters": "Source code exposure for enterprise resource planning (ERP) platforms significantly increases the risk of zero-day discovery targeting critical supply chains worldwide.",
+      "published_at": "Fri, 27 Nov 2026 13:15:00 GMT"
     },
     {
-      "title": "National Security Agency Recovers From Widespread Internal Network Outages",
+      "title": "Software Supply Chain Attack Backdoors Utility Binaries on SoftwareOK",
+      "category": "cybersecurity",
+      "source_name": "The Hacker News",
+      "source_url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+      "summary": "Attackers breached the distribution infrastructure of SoftwareOK to replace official installers for utilities Q-Dir and DesktopOK with malware. The trojanized executables infected systems during both direct downloads and automatic background updates.",
+      "why_it_matters": "Subverting developer build and distribution conduits bypasses standard perimeter defenses by abusing trust in legitimate administrative utilities.",
+      "published_at": "Fri, 27 Nov 2026 14:59:30 +0530"
+    },
+    {
+      "title": "pCloud Pass Compromised as Attackers Bypass Multi-Factor Authentication",
+      "category": "cybersecurity",
+      "source_name": "BleepingComputer",
+      "source_url": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login alerts/",
+      "summary": "Password management provider pCloud confirmed a cyberattack after subscribers reported unauthorized device logins that bypassed two-factor authentication safeguards. The company stated that the breach was contained after attackers harvested user email addresses and attempted credential validation.",
+      "why_it_matters": "Security flaws or token replay bugs that circumvent two-factor authentication on password managers undermine core identity management infrastructure.",
+      "published_at": "Fri, 27 Nov 2026 14:26:04 -0500"
+    },
+    {
+      "title": "Microsoft Store Vector Delivers Malicious Vinci RAT via Rogue Snipping App",
+      "category": "cybersecurity",
+      "source_name": "The Hacker News",
+      "source_url": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
+      "summary": "Security researchers documented an attack chain utilizing a spoofed snipping tool to deploy Vinci RAT through official Microsoft Store mechanisms. The signed installer connects to adversary infrastructure to yield interactive command execution and exfiltration capabilities.",
+      "why_it_matters": "Abusing verified app marketplaces defeats host-based application whitelisting and traditional code-signing verification protocols.",
+      "published_at": "Fri, 27 Nov 2026 17:19:34 +0530"
+    },
+    {
+      "title": "WeaveLotus Group Launches Espionage Campaign Targeting Southeast Asian Defense Entities",
+      "category": "cybersecurity",
+      "source_name": "The Hacker News",
+      "source_url": "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html",
+      "summary": "A state-sponsored threat group designated WeaveLotus has launched multiple cyber espionage campaigns against military and government networks across Southeast Asia. The intrusions focused on exfiltrating classified defense agreements and geopolitical intelligence surrounding the South China Sea.",
+      "why_it_matters": "The campaign demonstrates sophisticated adversary persistence aimed at military command structures and high-level regional defense negotiations.",
+      "published_at": "Fri, 27 Nov 2026 22:06:11 +0530"
+    },
+    {
+      "title": "Agence France-Presse News Distribution Network Severed by Cyberattack",
       "category": "cybersecurity",
       "source_name": "The Record",
-      "source_url": "https://therecord.media/nsa-resumes-normal-operations-following-internal-disruptions",
-      "summary": "The National Security Agency returned to baseline operations following severe disruptions that affected its internal classified and administrative networks. Operational centers had temporarily instituted localized Code Orange protocols and delayed facility access for non-essential staff.",
-      "why_it_matters": "Prolonged network disruption inside premier intelligence entities indicates acute internal architecture vulnerabilities or unprecedented lateral disruption.",
-      "published_at": "Fri, 20 Nov 2026 16:06:00 GMT"
+      "source_url": "https://therecord.media/france-afp-hit-by-cyberattack",
+      "summary": "Global news provider Agence France-Presse suffered a targeted cyber incident that disrupted its core transmission systems. Technical staff were forced to shut down critical distribution feeds serving media organizations across the globe.",
+      "why_it_matters": "Media infrastructure disruptions impair real-time global intelligence dissemination and create single points of failure in international communications networks.",
+      "published_at": "Fri, 27 Nov 2026 00:00:00 GMT"
     },
     {
-      "title": "Congressional Scrutiny Threatens Military Contracts Over Starshield Configuration Changes",
+      "title": "UK Department for Work and Pensions Shuts Down Public Systems After Cyber Incident",
+      "category": "cybersecurity",
+      "source_name": "The Record",
+      "source_url": "https://therecord.media/uk-department-work-pensions-cyber-incident",
+      "summary": "The United Kingdom's Department for Work and Pensions took several critical civic platforms offline following a security breach. Administrative personnel enacted emergency operational containment protocols while incident responders evaluate unauthorized system access.",
+      "why_it_matters": "Government portal shutdowns disrupt essential public service distribution and highlight vulnerabilities in core civic IT frameworks.",
+      "published_at": "Fri, 27 Nov 2026 00:00:00 GMT"
+    },
+    {
+      "title": "Japan Education Ministry Procurement Platform Breached",
+      "category": "cybersecurity",
+      "source_name": "The Record",
+      "source_url": "https://therecord.media/japan-education-ministry-cyberattack",
+      "summary": "Japan's Ministry of Education disclosed an unauthorized network breach affecting its government procurement portal. The compromise permitted attackers to access sensitive enterprise supplier data, public bids, and government contact databases.",
+      "why_it_matters": "Compromised procurement architectures expose broader institutional supply chains and provide intelligence for secondary spear-phishing campaigns.",
+      "published_at": "Fri, 27 Nov 2026 14:15:00 GMT"
+    },
+    {
+      "title": "Boston Scientific Data Breach Discloses Critical Patient Medical Information",
+      "category": "cybersecurity",
+      "source_name": "BleepingComputer",
+      "source_url": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/",
+      "summary": "Medical technology manufacturer Boston Scientific began dispatching formal notifications following an internal systems intrusion. The attackers extracted sensitive records comprising both personal identifying details and protected clinical healthcare data.",
+      "why_it_matters": "Medical device manufacturers hold high-value proprietary and clinical data, making unauthorized access an acute compliance and operational liability.",
+      "published_at": "Fri, 27 Nov 2026 13:57:42 -0500"
+    },
+    {
+      "title": "Nvidia Pauses Semiconductor Shipments to Southeast Asian Distribution Hubs",
       "category": "tech",
-      "source_name": "Ars Technica",
-      "source_url": "https://arstechnica.com/space/2026/11/incoming-house-chair-threatens-spacex-funding-over-ukraine-controversy/",
-      "summary": "Congressional leaders initiated an inquiry into SpaceX following unauthorized operational adjustments to Starshield satellite constellations deployed in Ukraine. Lawmakers warned that unilateral network policy modifications could forfeit future satellite defense contracts.",
-      "why_it_matters": "The dispute highlights critical operational frictions when military command structures depend on commercial space and satellite telecommunications architectures.",
-      "published_at": "Fri, 20 Nov 2026 22:16:51 +0000"
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "summary": "Nvidia instructed supply chain partners to immediately halt AI server shipments to Malaysia, Singapore, Thailand, and Indonesia. The freeze stems from expanded regulatory measures intended to prevent the transshipment of advanced computing silicon into China.",
+      "why_it_matters": "Sudden hardware embargoes disrupt regional cloud compute deployment schedules and escalate friction across the semiconductor supply chain.",
+      "published_at": "Thu, 26 Nov 2026 20:03:54 +0000"
     },
     {
-      "title": "Atlanta Air Traffic Paralyzed by Delta Flight Management System Failure",
-      "category": "tech",
-      "source_name": "The Verge",
-      "source_url": "https://www.theverge.com/transportation/1039779/delta-flights-delayed-system-outage",
-      "summary": "A critical failure in the automated system responsible for aircraft weight and balance calculations halted Delta flight departures at Hartsfield-Jackson Atlanta International Airport. The outage triggered widespread nationwide cascading delays across the commercial aviation network.",
-      "why_it_matters": "Core dispatch and load balancing software represent single points of failure that can completely disable real-time global transport operations when resilience mechanisms fail.",
-      "published_at": "2026-11-22T12:46:44-05:00"
-    },
-    {
-      "title": "BepiColombo Spacecraft Reaches Mercury to Begin Joint Scientific Mission",
+      "title": "Synthetic Biology Breakthrough Enables Paclitaxel Synthesis in Plant Hosts",
       "category": "science",
       "source_name": "Nature News",
-      "source_url": "https://www.nature.com/articles/d41586-026-03803-8",
-      "summary": "The joint European and Japanese BepiColombo mission successfully entered Mercury's planetary orbit following an eight-year interplanetary cruise. The spacecraft has separated into two dedicated orbiters equipped to map the planet's magnetosphere, geology, and core composition.",
-      "why_it_matters": "Data collected by the dual orbiters will resolve fundamental questions regarding the formation and structural evolution of rocky planets close to parent stars.",
-      "published_at": "2026-11-23T09:33:01.324564+00:00"
+      "source_url": "https://www.nature.com/articles/d41586-026-03801-w",
+      "summary": "Researchers successfully engineered a tobacco-related plant model to synthesize the critical chemotherapy compound paclitaxel. The proof-of-concept reconstructs a notoriously complex metabolic pathway inside an easily cultivated biological host.",
+      "why_it_matters": "Replicating paclitaxel biosynthesis in rapid-growing crops mitigates critical supply shortages and reduces reliance on slow-growing Pacific yew trees.",
+      "published_at": "2026-11-28T09:13:57.426561+00:00"
+    },
+    {
+      "title": "Direct Intracranial Recordings Decode Wernicke's Area Role in Speech Processing",
+      "category": "science",
+      "source_name": "Nature News",
+      "source_url": "https://www.nature.com/articles/d41586-026-03800-x",
+      "summary": "Neuroscientists utilizing high-resolution cortical recordings uncovered new cognitive processing mechanisms in Wernicke's area. The data reveals that the brain region executes active computational transformations rather than operating purely as a passive auditory processing center.",
+      "why_it_matters": "Resolving fundamental speech-language circuitry directly advances neural decoding algorithms and next-generation speech neuroprostheses.",
+      "published_at": "2026-11-28T09:13:57.426557+00:00"
+    },
+    {
+      "title": "Live Human Cortical Tissue Samples Reveal In Situ Neuronal Dynamics",
+      "category": "science",
+      "source_name": "Nature News",
+      "source_url": "https://www.nature.com/articles/d41586-026-03900-8",
+      "summary": "Scientists analyzing viable neuronal tissue recovered during neurosurgical procedures are mapping active cellular behaviors unique to the living human brain. The technique allows researchers to measure synaptic properties that degrade quickly in post-mortem samples.",
+      "why_it_matters": "Direct experimental observation of viable human brain architecture bypasses the physiological limitations inherent to non-human animal models.",
+      "published_at": "2026-11-28T09:13:57.426565+00:00"
     }
   ]
 }
